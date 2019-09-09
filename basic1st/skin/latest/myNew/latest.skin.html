@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{padding:0;margin: 0;box-sizing:border-box;}
+		li{list-style:none;}
+		body{background-color: #ddd;}
+		.clearfix:after{content:"";display: block;clear:both;}
+		#section{width: 950px;margin: 0 auto;background-color: #fff;padding:30px 0;}
+
+		#section .section_title{float: left;width: 150px;}
+		#section .section_title h3{font-size: 20px;font-weight:bold;color:#333;margin-bottom: 15px;}
+		#section .section_title .more_btn{display: block;width: 23px;height: 23px;
+		background:url(./images/more_btn.png) no-repeat 0 -23px ;
+		text-indent:-9999px;transition:0.3s;
+		}
+		#section .section_title .more_btn:hover{background-position: 0 0;}
+
+		#section .section_content{float: left;width: 800px;}
+		#section .section_content ul{}
+		#section .section_content ul li{float: left;width: 200px;padding-left: 20px;
+			border-right: 1px solid #ddd;
+		}
+		#section .section_content ul li:last-child{border-right:0px none;}
+		#section .section_content ul li a{}
+		#section .section_content .news_title{font-size:20px;height: 84px;margin-bottom: 30px;}
+		#section .section_content .date{font-size:13px;}
+	</style>
+</head>
+<body>
+	<section id="section">
+		<div class="wrap clearfix">
+
+			<div class="section_title">
+				<h3>뉴스룸</h3>
+				<a href="#" class="more_btn">more</a>
+			</div>
+
+			<div class="section_content">
+				<ul class="news_list clearfix">
+					<li>
+						<a href="#">
+						<h4 class="news_title">Lorem ipsum dolor sit amet.</h4>	
+						<span class="date">20190724</span>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<h4 class="news_title">Lorem ipsum dolor sit amet.</h4>	
+						<span class="date">20190724</span>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<h4 class="news_title">Lorem ipsum dolor sit amet.</h4>	
+						<span class="date">20190724</span>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<h4 class="news_title">Lorem ipsum dolor sit amet.</h4>	
+						<span class="date">20190724</span>
+
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
